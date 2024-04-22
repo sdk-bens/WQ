@@ -1,0 +1,66 @@
+.data-page {
+    padding: 20px;
+  }
+  
+  .data-page h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .data-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .data-page li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  /* Add additional styles as needed */
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+  
+  .explore-button {
+    background-color: #254db9;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-button:hover {
+    background-color: darkblue;
+  }
+    
+
+  .center-text {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+  
+
+
+  .loading-indicator {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #3498db; /* Blue color for the spinner */
+    border-radius: 50%;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    animation: spin 1s linear infinite;
+    margin: 40px auto; /* Adjust margin to lower the spinning wheel */
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
