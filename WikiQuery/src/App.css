@@ -1,0 +1,107 @@
+body {
+  margin: 0; 
+  padding: 0; 
+  background-color: #b3b1b1; 
+}
+
+.App {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.top-menu {
+  background-color: #29292b;
+  color: #fff;
+  padding: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the icon to the left */
+  padding: 10px;
+}
+
+.menu-line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+  transition: transform 0.3s ease;
+}
+
+.menu-line:nth-child(2) {
+  width: 20px;
+}
+
+.menu-icon.open .menu-line:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.menu-icon.open .menu-line:nth-child(2) {
+  transform: scaleX(0);
+}
+
+.menu-icon.open .menu-line:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.menu-list.open {
+  max-height: 200px; /* Adjust max-height as needed */
+}
+
+.menu-list li {
+  margin: 0;
+}
+
+.menu-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  background-color: rgba(215, 205, 205, 0.1);
+}
+
+.search-bar-container {
+  padding-top: 20vh;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+}
+
+.cool-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  color: #08090a;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
+
+.top-container {
+  padding: 50px;
+  background-color: #efefef;
+}
